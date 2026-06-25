@@ -1,14 +1,16 @@
 import os
 import json
+import asyncio
 from pickle import GET
 import uvicorn
 import requests
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Request
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Request, BackgroundTasks
 from fastapi.responses import Response
 from openai import OpenAI
 from dotenv import load_dotenv
 from datetime import datetime
 from pathlib import Path
+from transcript_analyzer import analyze_transcript
 
 # Load environment variables from .env file
 load_dotenv()
@@ -18,7 +20,7 @@ PORT = int(os.getenv("PORT", "8080"))
 DOMAIN = os.getenv("NGROK_URL")
 WS_URL = f"wss://{DOMAIN}/ws"
 MODEL = "gpt-4o-mini" # You can change this to any OpenAI model you prefer
-WELCOME_GREETING = "Hi, I was hoping to schedule an appointment."
+PROMPT_PADDING_SECONDS = float(os.getenv("PROMPT_PADDING_SECONDS", "1.5"))
 BASE_SYSTEM_PROMPT = """
 You are pretending to be a real patient calling a medical office phone agent.
 
@@ -35,13 +37,44 @@ If you do not understand the agent, ask a natural clarification like, "Sorry, co
 Stay focused on the current patient goal and gently steer the conversation back if needed.
 """
 
-SCENARIO_PROMPT = """
-Current scenario: scheduling an appointment.
+SCENARIO_PROMPT = [
+    # 0: scheduling an appointment
+    "Current scenario: scheduling an appointment. You are Alex Johnson. You are calling because your knee has been hurting for a few months. Your goal is to schedule a non-emergency appointment.",
+    # 1: scheduling an appointment
+    "Current scenario: scheduling an appointment. You are calling to schedule a follow-up visit for chronic back pain. Your goal is to book a Tuesday morning appointment and explain the pain has lasted 3 months.",
+    # 2: scheduling an appointment
+    "Current scenario: scheduling an appointment. You are calling to make a new patient appointment for a sore shoulder. Your goal is to find a Monday or Wednesday afternoon slot.",
+    # 3: rescheduling an appointment
+    "Current scenario: rescheduling an appointment. You are calling to move your next Thursday migraine follow-up to the following Tuesday afternoon because your work schedule changed.",
+    # 4: canceling an appointment
+    "Current scenario: canceling an appointment. You are calling to cancel your Thursday checkup due to illness and request the earliest available weekday slot instead.",
+    # 5: rescheduling an appointment
+    "Current scenario: rescheduling an appointment. You are calling to move your appointment because of a family emergency and you need Wednesday or Friday after 2 PM.",
+    # 6: medication refill
+    "Current scenario: medication refill. You are calling to request a refill for lisinopril. Your goal is to ask if the office can authorize a 30-day refill today.",
+    # 7: medication refill
+    "Current scenario: medication refill. You are calling to refill your asthma inhaler and ask whether the doctor needs to approve it first because the pharmacy says you are out.",
+    # 8: medication refill
+    "Current scenario: medication refill. You are calling to request a chronic medication refill and ask whether the doctor can sign off on a 90-day supply.",
+    # 9: office hours
+    "Current scenario: office hours question. You are calling to ask whether the clinic is open on Saturdays, and if not, what the earliest weekday hours are.",
+    # 10: location and insurance
+    "Current scenario: locations and insurance. You are calling to confirm which location Dr. Lee sees patients at and whether that office accepts Blue Cross Blue Shield.",
+    # 11: location and insurance
+    "Current scenario: locations and insurance. You are a new patient asking if the office accepts your PPO plan, where the nearest location is, and how soon you can be seen for a knee injury.",
+    # 12: office hours
+    "Current scenario: office hours question. You are calling to ask if the office is open after 5 PM and whether they offer evening appointments; if not, ask for the next available morning slot.",
+    # 13: unclear issue
+    "Current scenario: unclear issue. You are calling because you feel ‘off’ but are not sure if it is urgent. Your goal is to ask what kind of appointment you should schedule and whether you should come in sooner.",
+    # 14: interruption
+    "Current scenario: interruption. You are calling while interrupted by a doorbell or another person speaking in the background. Pause briefly, then tell the agent you need one moment but still want to continue the call.",
+    # 15: confusion
+    "Current scenario: confusion. You are a patient who heard two different dates from the agent and ask for confirmation: 'Just to confirm, is my appointment on June 26 or July 26?'",
+    # 16: unusual request
+    "Current scenario: unusual request. You are calling to ask if the office can fax records to a specialist or handle a radiology disc."
+]
 
-You are Alex Johnson. You are calling because your knee has been hurting for a few months.
-
-Your goal is to schedule a non-emergency appointment.
-
+SCENARIO_PREFERENCES = """
 Preferences:
 You prefer Friday morning.
 If that is not available, you can accept Monday afternoon, Tuesday morning, or Wednesday after two.
@@ -61,7 +94,7 @@ If the agent needs more detail, give it naturally.
 When the appointment is confirmed, thank them and end the call.
 """
 
-SYSTEM_PROMPT = BASE_SYSTEM_PROMPT + SCENARIO_PROMPT
+SYSTEM_PROMPT = BASE_SYSTEM_PROMPT + SCENARIO_PROMPT + SCENARIO_PREFERENCES
 
 
 RECORDING_DIR = Path("recordings")
@@ -88,11 +121,58 @@ app = FastAPI()
 
 async def ai_response(messages):
     """Get a response from OpenAI API"""
-    completion = openai.chat.completions.create(
+    completion = await asyncio.to_thread(
+        openai.chat.completions.create,
         model=MODEL,
-        messages=messages
+        messages=messages,
     )
     return completion.choices[0].message.content
+
+async def process_agent_prompt(websocket: WebSocket, agent_text: str):
+    print(f"Processing prompt: {agent_text}")
+
+    conversation = sessions[websocket.call_sid]
+
+    # The other side of the call said this
+    conversation.append({"role": "user", "content": agent_text})
+
+    # Your bot generates a patient-style response
+    response = await ai_response(conversation)
+
+    # Your bot's response is still the OpenAI "assistant"
+    conversation.append({"role": "assistant", "content": response})
+
+    # Transcript labels can use real-world names
+    save_transcript_line(websocket.call_sid, "Agent", agent_text)
+    save_transcript_line(websocket.call_sid, "Patient Bot", response)
+
+    await websocket.send_text(
+        json.dumps({
+            "type": "text",
+            "token": response,
+            "last": True
+        })
+    )
+
+    print(f"Sent response: {response}")
+
+async def prompt_buffer_worker(websocket: WebSocket, prompt_queue: asyncio.Queue):
+    while True:
+        agent_texts = [await prompt_queue.get()]
+
+        while True:
+            try:
+                next_text = await asyncio.wait_for(
+                    prompt_queue.get(),
+                    timeout=PROMPT_PADDING_SECONDS,
+                )
+                agent_texts.append(next_text)
+            except asyncio.TimeoutError:
+                break
+
+        combined_agent_text = " ".join(text.strip() for text in agent_texts if text.strip())
+        if combined_agent_text:
+            await process_agent_prompt(websocket, combined_agent_text)
 
 @app.post("/twiml")
 async def twiml_endpoint():
@@ -100,7 +180,7 @@ async def twiml_endpoint():
     xml_response = f"""<?xml version="1.0" encoding="UTF-8"?>
     <Response>
       <Connect>
-        <ConversationRelay url="{WS_URL}" welcomeGreeting="{WELCOME_GREETING}" ttsProvider="ElevenLabs" voice="FGY2WhTYpPnrIDTdsKH5" />
+        <ConversationRelay url="{WS_URL}" ttsProvider="ElevenLabs" voice="FGY2WhTYpPnrIDTdsKH5" />
       </Connect>
     </Response>"""
     
@@ -111,6 +191,8 @@ async def websocket_endpoint(websocket: WebSocket):
     """WebSocket endpoint for real-time communication"""
     await websocket.accept()
     call_sid = None
+    prompt_queue = asyncio.Queue()
+    buffer_task = asyncio.create_task(prompt_buffer_worker(websocket, prompt_queue))
     
     try:
         while True:
@@ -125,32 +207,8 @@ async def websocket_endpoint(websocket: WebSocket):
                 
             elif message["type"] == "prompt":
                 agent_text = message["voicePrompt"]
-                print(f"Processing prompt: {agent_text}")
-
-                conversation = sessions[websocket.call_sid]
-
-                # The other side of the call said this
-                conversation.append({"role": "user", "content": agent_text})
-
-                # Your bot generates a patient-style response
-                response = await ai_response(conversation)
-
-                # Your bot's response is still the OpenAI "assistant"
-                conversation.append({"role": "assistant", "content": response})
-
-                # Transcript labels can use real-world names
-                save_transcript_line(websocket.call_sid, "Agent", agent_text)
-                save_transcript_line(websocket.call_sid, "Patient Bot", response)
-
-                await websocket.send_text(
-                    json.dumps({
-                        "type": "text",
-                        "token": response,
-                        "last": True
-                    })
-                )
-
-                print(f"Sent response: {response}")
+                print(f"Queued prompt: {agent_text}")
+                await prompt_queue.put(agent_text)
                 
             elif message["type"] == "interrupt":
                 print("Handling interruption.")
@@ -162,9 +220,15 @@ async def websocket_endpoint(websocket: WebSocket):
         print("WebSocket connection closed")
         if call_sid:
             sessions.pop(call_sid, None)
+    finally:
+        buffer_task.cancel()
+        try:
+            await buffer_task
+        except asyncio.CancelledError:
+            pass
 
 @app.post("/recording-complete")
-async def recording_complete(request: Request):
+async def recording_complete(request: Request, background_tasks: BackgroundTasks):
     """Twilio calls this after the recording is finished processing."""
     form = await request.form()
 
@@ -191,6 +255,8 @@ async def recording_complete(request: Request):
         file.write(response.content)
 
     print(f"Saved recording to {recording_file_path}")
+
+    background_tasks.add_task(analyze_transcript, call_sid)
 
     return Response(status_code=204)
 

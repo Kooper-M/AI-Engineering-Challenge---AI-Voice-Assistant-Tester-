@@ -1,1 +1,6 @@
 .env
+recordings/
+transcripts/
+analysis/
+__pycache__/
+*.pyc
