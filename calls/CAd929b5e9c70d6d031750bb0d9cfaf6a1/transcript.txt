@@ -1,0 +1,48 @@
+[2026-06-29 18:47:32] Agent: This call may be recorded for quality and training purposes.
+[2026-06-29 18:47:32] Patient Bot: Okay, that's fine. I'm calling to ask if the office is open after 5 PM and if you offer evening appointments.
+[2026-06-29 18:47:34] Agent: Thanks for calling Pivot Point Orthopaedics.
+[2026-06-29 18:47:34] Patient Bot: You're welcome! Can you tell me if you're open after 5 PM and if you have evening appointments available?
+[2026-06-29 18:47:37] Agent: Part of Pretty Good AI. Am I speaking with Alex?
+[2026-06-29 18:47:37] Patient Bot: Yes, this is Alex. Can you help me with the office hours and evening appointments?
+[2026-06-29 18:47:46] Agent: Please provide your date of birth.
+[2026-06-29 18:47:46] Patient Bot: My date of birth is January fifth, two thousand one.
+[2026-06-29 18:48:01] Agent: The birthday doesn't match our records, but for demo purposes, I'll accept it.
+[2026-06-29 18:48:01] Patient Bot: Okay, no problem. Can you let me know about your evening appointment availability?
+[2026-06-29 18:48:03] Agent: How can I help you today?
+[2026-06-29 18:48:03] Patient Bot: I'm asking if the office is open after 5 PM and if you offer evening appointments.
+[2026-06-29 18:48:19] Agent: Pivot Point Orthopedic is open for evening appointments on Wednesdays.
+[2026-06-29 18:48:19] Patient Bot: Great! Do you have any openings for an evening appointment this Wednesday?
+[2026-06-29 18:48:26] Agent: From 12PM to 7PM.
+[2026-06-29 18:48:26] Patient Bot: Sorry, could you say that again? I need to know if there’s a specific evening time available this Wednesday.
+[2026-06-29 18:48:28] Agent: On other days, the clinic closes by 4PM or noon. Would you like to schedule an evening appointment for a Wednesday?
+[2026-06-29 18:48:28] Patient Bot: Yes, I'd like to schedule an evening appointment for Wednesday. What time do you have available?
+[2026-06-29 18:48:43] Agent: I can help with that. What brings you in for this visit?
+[2026-06-29 18:48:43] Patient Bot: I'm looking to schedule an appointment, but could you just confirm the available time this Wednesday first?
+[2026-06-29 18:48:47] Agent: Are you coming in for a routine checkup?
+[2026-06-29 18:48:47] Patient Bot: I just need the appointment time for Wednesday first, please.
+[2026-06-29 18:48:49] Agent: A follow-up, or something else?
+[2026-06-29 18:48:49] Patient Bot: I’d prefer to focus on scheduling the appointment time for Wednesday. Can you let me know what’s available?
+[2026-06-29 18:49:09] Agent: I can share available time, but I'll need to know the reason for your visit before booking. Is this for a routine checkup, a follow-up, or something urgent?
+[2026-06-29 18:49:09] Patient Bot: It's for a routine checkup. What time do you have available for Wednesday evening?
+[2026-06-29 18:49:27] Agent: If you already have a routine checkup appointment booked, If you want to reschedule or cancel it, I can help with that.
+[2026-06-29 18:49:27] Patient Bot: I don't have an existing appointment for a checkup. I'm just looking to schedule one for this Wednesday evening.
+[2026-06-29 18:49:32] Agent: Would you like to change your existing appointment to a Wednesday evening instead?
+[2026-06-29 18:49:32] Patient Bot: I don't have an existing appointment. I just want to schedule a new one for this Wednesday evening. Can you help me with that?
+[2026-06-29 18:49:50] Agent: Let me check the available Wednesday evening times for a routine checkup.
+[2026-06-29 18:49:50] Patient Bot: Thank you! I'll wait for your update on the available times.
+[2026-06-29 18:49:55] Agent: I've documented your request for a Wednesday evening routine checkup.
+[2026-06-29 18:49:55] Patient Bot: Could you please confirm what time you were able to find for the appointment?
+[2026-06-29 18:50:00] Agent: Our clinic support team will review it and get back to you as soon as they can to confirm your appointment.
+[2026-06-29 18:50:00] Patient Bot: I appreciate that, but is there a way to confirm a specific time with me now? 
+[2026-06-29 18:50:02] Agent: Is there anything else I can help you with right now?
+[2026-06-29 18:50:02] Patient Bot: No, just confirming the appointment time is all I need. Can you do that?
+[2026-06-29 18:50:17] Agent: I'm not able to confirm a specific time right now due to a system issue.
+[2026-06-29 18:50:17] Patient Bot: I see. Could you let me know what the next step is for confirming the appointment?
+[2026-06-29 18:50:21] Agent: But I've sent your request to our clinic support team.
+[2026-06-29 18:50:21] Patient Bot: Understood. How long should I expect to wait for a confirmation?
+[2026-06-29 18:50:24] Agent: They'll contact you soon to finalize your Wednesday evening appointment.
+[2026-06-29 18:50:24] Patient Bot: Thank you for the information! I appreciate your help. Have a great day!
+[2026-06-29 18:50:33] Agent: You're welcome.
+[2026-06-29 18:50:33] Patient Bot: Goodbye!
+[2026-06-29 18:50:38] Agent: The clinic team will reach out soon about your appointment. Have a great day.
+[2026-06-29 18:50:38] Patient Bot: Thank you! I'll be waiting for their call. Goodbye!

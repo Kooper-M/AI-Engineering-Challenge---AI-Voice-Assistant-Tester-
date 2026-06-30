@@ -1,0 +1,66 @@
+[2026-06-28 16:20:37] Agent: This call may be recorded for quality and training purposes.
+[2026-06-28 16:20:37] Patient Bot: Okay, thank you for letting me know. I'm calling to refill my asthma inhaler. Can you help me with that?
+[2026-06-28 16:20:41] Agent: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI.
+[2026-06-28 16:20:41] Patient Bot: I think there might be a mix-up. I'm looking to refill my asthma inhaler. Can you assist with that?
+[2026-06-28 16:20:43] Agent: Am I speaking with Alex?
+[2026-06-28 16:20:43] Patient Bot: Yes, this is Alex. I need help with my asthma inhaler refill.
+[2026-06-28 16:20:57] Agent: Please provide your date of birth.
+[2026-06-28 16:20:57] Patient Bot: My date of birth is January fifth, two thousand one.
+[2026-06-28 16:21:13] Agent: Which asthma inhaler do you need refilled?
+[2026-06-28 16:21:13] Patient Bot: I need a refill for my Albuterol inhaler. Will the doctor need to approve that first?
+[2026-06-28 16:21:15] Agent: Please tell me the exact name on the prescription if you know it.
+[2026-06-28 16:21:15] Patient Bot: I believe it's labeled as Albuterol sulfate.
+[2026-06-28 16:21:27] Agent: How many days of albuterol sulfate do you have left? If you are already out, just let me know.
+[2026-06-28 16:21:27] Patient Bot: I'm out of it now.
+[2026-06-28 16:21:37] Agent: I have you as out of albuterol sulfate.
+[2026-06-28 16:21:37] Patient Bot: Okay, great. Will the refill request be sent to my pharmacy, or does the doctor need to approve it first?
+[2026-06-28 16:21:40] Agent: What is the best phone number for staff to call you back about this refill?
+[2026-06-28 16:21:40] Patient Bot: You can reach me at plus one, eight seven seven, three four nine, six zero two five.
+[2026-06-28 16:21:49] Agent: I have your number as 8 7 7 3 4 9 6 0 2 5 Is that correct?
+[2026-06-28 16:21:49] Patient Bot: Yes, that's correct. Will the refill request be sent to the pharmacy?
+[2026-06-28 16:22:15] Agent: Could you please tell me the name of pharmacy you want to use for your medication? If you know the address, city, or any details like cross streets or nearby stores, That would help too. If you have their phone or fax number, please share that as well.
+[2026-06-28 16:22:15] Patient Bot: I get my medication at Walgreens, but I don’t have the address handy. Just a refill at the usual location should be fine.
+[2026-06-28 16:22:31] Agent: Is there anything you can tell me to help identify which Walgreens?
+[2026-06-28 16:22:31] Patient Bot: Um, I usually go to the one on Main Street, near the grocery store. Does that help?
+[2026-06-28 16:22:35] Agent: For example, the city, a nearby landmark, or cross streets?
+[2026-06-28 16:22:35] Patient Bot: Yes, it's in Springfield, near the intersection of Main and Second.
+[2026-06-28 16:22:37] Agent: This will help the clinic staff make sure they send your medication to the right location.
+[2026-06-28 16:22:37] Patient Bot: Got it, thank you. So, will my refill be sent to the Walgreens on Main and Second in Springfield?
+[2026-06-28 16:22:54] Agent: Could you please confirm the state for the Walgreens on Main And 2nd in Springfield?
+[2026-06-28 16:22:54] Patient Bot: It's in Illinois.
+[2026-06-28 16:22:56] Agent: You know the ZIP code, that would help too.
+[2026-06-28 16:22:56] Patient Bot: I think the ZIP code is 62701.
+[2026-06-28 16:22:59] Agent: Will make sure your refill goes to the right pharmacy.
+[2026-06-28 16:22:59] Patient Bot: Thank you! Just to confirm, will my refill request be sent today?
+[2026-06-28 16:23:12] Agent: I'm here to help update your pharmacy info, but I don't handle refill processing directly.
+[2026-06-28 16:23:12] Patient Bot: Okay, I understand. Can you tell me what the next step is for the refill?
+[2026-06-28 16:23:17] Agent: Once I have the full pharmacy details, the clinic staff will send your request as soon as possible.
+[2026-06-28 16:23:17] Patient Bot: Alright, so do you have everything you need for Walgreens on Main and Second in Springfield, Illinois, ZIP code 62701?
+[2026-06-28 16:23:22] Agent: Could you please confirm the state for the Walgreens in Springfield?
+[2026-06-28 16:23:22] Patient Bot: It's in Illinois.
+[2026-06-28 16:23:32] Agent: Thanks.
+[2026-06-28 16:23:32] Patient Bot: You're welcome! Will my refill request be sent out soon?
+[2026-06-28 16:23:34] Agent: I have several Walgreens locations in Springfield, Illinois.
+[2026-06-28 16:23:34] Patient Bot: Could you confirm that it's the one on Main and Second?
+[2026-06-28 16:23:38] Agent: Do you know if your usual Walgreens is near a specific street, neighborhood, or landmark?
+[2026-06-28 16:23:38] Patient Bot: Yes, it's near the grocery store and the park.
+[2026-06-28 16:23:41] Agent: For example, is it close to Adlai Stevenson Drive?
+[2026-06-28 16:23:41] Patient Bot: Yes, it's not far from Adlai Stevenson Drive.
+[2026-06-28 16:23:52] Agent: South MacArthur Boulevard, East Clear Lake Avenue, North Peoria Road, South 6th Street, West Jefferson Street, South Coke Mill Road, or West Monroe Street?
+[2026-06-28 16:23:52] Patient Bot: I believe it’s closer to South 6th Street.
+[2026-06-28 16:23:55] Agent: Any detail will help me find the right 1.
+[2026-06-28 16:23:55] Patient Bot: It's definitely near the grocery store and the park on Main Street, not far from South 6th Street in Springfield. Would that be helpful?
+[2026-06-28 16:24:09] Agent: That helps. Thank you.
+[2026-06-28 16:24:09] Patient Bot: You're welcome! So, will my refill request be sent out shortly?
+[2026-06-28 16:24:19] Agent: Based on your description, the Walgreens at 2945 South 6th Street in Springfield, ZIP code 62703 might be the 1 you use.
+[2026-06-28 16:24:19] Patient Bot: That sounds right. Can you confirm if the refill request will go there?
+[2026-06-28 16:24:21] Agent: Can you confirm if this is your usual pharmacy?
+[2026-06-28 16:24:21] Patient Bot: Yes, that's my usual Walgreens.
+[2026-06-28 16:24:39] Agent: I've documented your request for an asthma inhaler refill.
+[2026-06-28 16:24:39] Patient Bot: Thank you! When should I expect to see it at the pharmacy?
+[2026-06-28 16:24:49] Agent: And sent it to our clinic support team.
+[2026-06-28 16:24:49] Patient Bot: Great! Will they let me know when it's approved?
+[2026-06-28 16:24:52] Agent: They'll get back to you as soon as they can. Is there anything else I can help you with today?
+[2026-06-28 16:24:52] Patient Bot: No, that's all for now. Thank you for your help!
+[2026-06-28 16:25:06] Agent: Yes. The clicks staff will contact you once your refill is approved or if they need more information. Have a good day.
+[2026-06-28 16:25:06] Patient Bot: Thank you! Have a good day too!

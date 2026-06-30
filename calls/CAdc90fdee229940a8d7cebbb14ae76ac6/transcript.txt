@@ -1,0 +1,64 @@
+[2026-06-29 21:24:34] Agent: This call may be recorded for quality and training purposes.
+[2026-06-29 21:24:34] Patient Bot: Okay, that's fine. I'm just calling to confirm which location Dr. Lee sees patients at and whether that office accepts Blue Cross Blue Shield.
+[2026-06-29 21:24:37] Agent: Thanks for calling Pivot Point Orthopedics.
+[2026-06-29 21:24:37] Patient Bot: You're welcome! Can you tell me which location Dr. Lee sees patients at and if they accept Blue Cross Blue Shield?
+[2026-06-29 21:24:40] Agent: Part of Pretty Good AI. Am I speaking with Alex?
+[2026-06-29 21:24:40] Patient Bot: Yes, this is Alex. Can you help me with the location of Dr. Lee and if that office takes Blue Cross Blue Shield?
+[2026-06-29 21:24:55] Agent: Please provide your date of birth.
+[2026-06-29 21:24:55] Patient Bot: My date of birth is January fifth, two thousand one.
+[2026-06-29 21:25:10] Agent: The birthday doesn't match our records, but for demo purposes, I'll accept it.
+[2026-06-29 21:25:10] Patient Bot: Okay, thanks. Can you still help me find out where Dr. Lee sees patients and if they accept Blue Cross Blue Shield?
+[2026-06-29 21:25:13] Agent: Let me check the clinic location and insurance details for you.
+[2026-06-29 21:25:13] Patient Bot: Thank you, I appreciate that.
+[2026-06-29 21:25:25] Agent: Pivot Point Orthopedics is at 1 2 3 4 Recovery Way, suite 200, Austin. We accept most insurance plans, including Blue Cross Blue Shield.
+[2026-06-29 21:25:25] Patient Bot: Got it, so Dr. Lee is at 1 2 3 4 Recovery Way, suite 200, in Austin, and they accept Blue Cross Blue Shield. Is there anything else I need to do?
+[2026-06-29 21:25:31] Agent: There isn't a doctor Lee at this clinic. Our doctors are doctor Hauser, doctor Ross, and doctor Bricker.
+[2026-06-29 21:25:31] Patient Bot: Sorry, I must have misspoken. Can you tell me about the doctors available and if one of them can assist me?
+[2026-06-29 21:25:33] Agent: Would you like information about 1 of them?
+[2026-06-29 21:25:33] Patient Bot: Yes, please. I’d like to know more about one of the doctors.
+[2026-06-29 21:25:48] Agent: No problem. Here's a quick overview of our doctors.
+[2026-06-29 21:25:48] Patient Bot: Thank you. Can you provide me with the names and specialties of the doctors?
+[2026-06-29 21:25:54] Agent: Doctor Judy Hauser focuses on quick orthopedic procedures and first time evaluations.
+[2026-06-29 21:25:54] Patient Bot: That sounds good. What about the other doctors?
+[2026-06-29 21:26:05] Agent: He's great for new patients or straightforward concerns, Doctor Doug Ross handles complex or advanced orthopedic procedures.
+[2026-06-29 21:26:05] Patient Bot: Thanks for that information. And what about Doctor Bricker?
+[2026-06-29 21:26:09] Agent: And longer appointments. Doctor Adam Bricker provides a approachable care for a wide range of joint and muscle issues.
+[2026-06-29 21:26:09] Patient Bot: Thank you for the details! Can I schedule an appointment with one of these doctors?
+[2026-06-29 21:26:13] Agent: Focusing on practical treatment and recovery.
+[2026-06-29 21:26:13] Patient Bot: That sounds helpful, but can I go ahead and schedule an appointment with one of the doctors now?
+[2026-06-29 21:26:17] Agent: Would you like to schedule a visit with 1 of them or hear more about a specific doctor?
+[2026-06-29 21:26:17] Patient Bot: I would like to schedule a visit with one of them.
+[2026-06-29 21:26:26] Agent: What brings you in?
+[2026-06-29 21:26:26] Patient Bot: I have some joint pain I'd like to get assessed.
+[2026-06-29 21:26:36] Agent: Are you looking for a routine checkup, a follow-up, a new patient consultation, do you have an urgent concern? This will help me book the right type of appointment for you.
+[2026-06-29 21:26:36] Patient Bot: I'm looking for a new patient consultation.
+[2026-06-29 21:26:44] Agent: Great.
+[2026-06-29 21:26:44] Patient Bot: Thank you! When can I schedule that appointment?
+[2026-06-29 21:26:52] Agent: I can help with that. Do you have a preference for which doctor you'd like to see, or should I look for the soonest available appointment with any of them?
+[2026-06-29 21:26:52] Patient Bot: I'd like to see Doctor Hauser if possible.
+[2026-06-29 21:27:03] Agent: It looks like you already have a new patient consultation appointment booked.
+[2026-06-29 21:27:03] Patient Bot: Sorry, I must have missed that. Can you confirm the date and time?
+[2026-06-29 21:27:06] Agent: If you'd like, I can help you reschedule or cancel that appointment.
+[2026-06-29 21:27:06] Patient Bot: I would like to reschedule that appointment if that's possible.
+[2026-06-29 21:27:10] Agent: Would you like to make a change, or do you need help with something else?
+[2026-06-29 21:27:10] Patient Bot: I would like to make a change to the appointment. What's the next step?
+[2026-06-29 21:27:22] Agent: I can help you reschedule or cancel your current appointment.
+[2026-06-29 21:27:22] Patient Bot: Please help me reschedule the appointment. What available dates do you have?
+[2026-06-29 21:27:27] Agent: Would you like to reschedule to a different date and time, or would you prefer to cancel it completely?
+[2026-06-29 21:27:27] Patient Bot: I want to reschedule to a different date and time. Could you provide some options?
+[2026-06-29 21:27:41] Agent: I'm unable to reschedule directly, but I can connect you with a live support agent.
+[2026-06-29 21:27:41] Patient Bot: Okay, that works for me. Please connect me with the live support agent.
+[2026-06-29 21:27:46] Agent: Who can help you find new appointment options and complete the rescheduling.
+[2026-06-29 21:27:46] Patient Bot: Thank you! I appreciate your help.
+[2026-06-29 21:27:48] Agent: Would you like me to transfer you now?
+[2026-06-29 21:27:48] Patient Bot: Yes, please transfer me now. Thank you!
+[2026-06-29 21:27:58] Agent: I can connect you to our patient support team.
+[2026-06-29 21:27:58] Patient Bot: That would be great. Thank you!
+[2026-06-29 21:28:03] Agent: However, I'm a pretty good AI and can do many of the things an operator can.
+[2026-06-29 21:28:03] Patient Bot: I understand, but I’d still prefer to talk with a live support agent for the appointment change.
+[2026-06-29 21:28:06] Agent: Do you wanna give me a try?
+[2026-06-29 21:28:06] Patient Bot: Sure, I’m open to it. What can you assist me with regarding the appointment?
+[2026-06-29 21:28:17] Agent: Connecting you to a representative. Please wait.
+[2026-06-29 21:28:17] Patient Bot: Thank you, I appreciate your help.
+[2026-06-29 21:28:22] Agent: Hello. You've reached the Pretty Good AI test line. Goodbye.
+[2026-06-29 21:28:22] Patient Bot: Wait, I still need help with my appointment.

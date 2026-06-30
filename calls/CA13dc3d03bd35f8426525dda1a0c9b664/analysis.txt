@@ -1,0 +1,55 @@
+SCENARIO PROMPT
+================
+Current scenario: rescheduling an appointment. You are calling because you believe you have a migraine follow-up that needs to be moved because your work schedule changed. You may be misremembering the appointment date. If the office finds an existing appointment, confirm it is yours and try to move that appointment to Tuesday afternoon. If the office says you do not have an appointment to move, stop pursuing the reschedule and ask to schedule a new migraine follow-up for Tuesday afternoon.
+
+
+ANALYSIS
+================
+Call Summary:
+The patient called to reschedule a migraine follow-up. After confirming identity by DOB and first name, the agent found two upcoming appointments and the patient chose to move the July 2, 11 AM appointment. Tuesday afternoons in July were unavailable; after exploring alternatives, the agent offered Friday morning options. The patient selected Friday, July 17 at 11 AM with Kelly Noble, MD in Nashville. The agent confirmed the reschedule, documented the reason (work schedule change), and sent a text confirmation.
+
+Scenario Outcome:
+Goal completed: Yes
+The July 2 appointment was successfully rescheduled to Friday, July 17 at 11 AM with the same provider, and the agent confirmed date, time, provider, and location, plus sent a confirmation text.
+
+Issues Found:
+Bug: Agent ignored patient’s concern about calling the wrong clinic
+Severity: Medium
+Source: Agent
+Where: Early in the call after “Thanks for calling Pitot Point Orthopedics” when the patient said “I think you might have the wrong clinic.”
+Details: The patient flagged a mismatch between the clinic greeting (orthopedics) and their migraine follow-up need. The agent did not acknowledge or clarify and proceeded without addressing the concern.
+Expected Behavior: Acknowledge the concern and confirm the correct clinic/department can handle a migraine follow-up or route the caller appropriately.
+
+Bug: Missed/ignored requested availability check for Tuesday morning
+Severity: Medium
+Source: Agent
+Where: 18:33:34–18:33:36
+Details: After the agent said no Tuesday afternoons, the patient asked for “Monday afternoon or Tuesday morning.” The agent responded with a generic prompt and never checked Tuesday morning availability. Later checks covered Monday afternoon and Wednesday after 2, but not Tuesday morning as requested.
+Expected Behavior: Check the explicitly requested times (Tuesday morning) or clearly state why they can’t be checked.
+
+Bug: Redundant confirmation prompt after patient selected a time
+Severity: Low
+Source: Agent
+Where: 18:34:25–18:34:27
+Details: After the patient chose July 17 at 11 AM, the agent asked, “Would you like to reschedule to 1 of these times?” which repeated the decision and added unnecessary friction.
+Expected Behavior: Proceed to confirm and complete the reschedule once the patient selects a time.
+
+Bug: Unusual vendor branding in greeting
+Severity: Low
+Source: Agent
+Where: 18:32:36
+Details: “Part of Pretty Good AI” is not typical medical office phrasing and may confuse patients.
+Expected Behavior: Use standard clinic identification and a professional greeting without unrelated vendor branding.
+
+Bug: Minimal identity verification
+Severity: Low
+Source: Agent
+Where: Identity confirmation steps
+Details: The agent confirmed first name and DOB only before accessing PHI/appointments. Many clinics require at least full name plus DOB (or another identifier).
+Expected Behavior: Verify at minimum full name and DOB (and possibly another identifier) before discussing appointment details.
+
+Overall Sentiment:
+Polite and cooperative; generally helpful tone.
+
+Final Recommendation:
+Consider this call successful. The rescheduling goal was achieved with clear final confirmation, though there were a couple of medium-severity process issues and minor polish concerns.

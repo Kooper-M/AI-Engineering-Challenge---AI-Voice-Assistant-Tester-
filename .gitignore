@@ -4,3 +4,4 @@ transcripts/
 analysis/
 __pycache__/
 *.pyc
+uncomplete/

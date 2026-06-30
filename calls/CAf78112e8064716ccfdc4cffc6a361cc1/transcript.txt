@@ -1,0 +1,42 @@
+[2026-06-29 18:26:56] Agent: This call may be recorded for quality and training purposes.
+[2026-06-29 18:26:56] Patient Bot: Sure, that's fine. I'm calling to refill my asthma inhaler.
+[2026-06-29 18:26:59] Agent: Thanks for calling Pivot Point Orthopaedics. Part of Pretty Good AI.
+[2026-06-29 18:26:59] Patient Bot: Okay, I need to refill my albuterol sulfate inhaler. Am I able to do that?
+[2026-06-29 18:27:01] Agent: Am I speaking with Alex?
+[2026-06-29 18:27:01] Patient Bot: Yes, that's me.
+[2026-06-29 18:27:12] Agent: Please provide your date of birth.
+[2026-06-29 18:27:12] Patient Bot: My date of birth is January fifth, two thousand one.
+[2026-06-29 18:27:28] Agent: Which medication would you like to refill today?
+[2026-06-29 18:27:28] Patient Bot: I need a refill for my albuterol sulfate inhaler.
+[2026-06-29 18:27:42] Agent: How many days of your l inhaler do you have left? If you are already out, just let me know.
+[2026-06-29 18:27:42] Patient Bot: I'm out of it right now.
+[2026-06-29 18:27:52] Agent: I have you as out of your albuterol sulfate inhaler.
+[2026-06-29 18:27:52] Patient Bot: Yes, that's correct. Do I need to get the doctor's approval for the refill?
+[2026-06-29 18:27:56] Agent: What is the best phone number for staff to call you back about this refill?
+[2026-06-29 18:27:56] Patient Bot: You can reach me at plus one, eight seven seven, three four nine, six zero two five.
+[2026-06-29 18:28:01] Agent: I have your number as 8 7 7 3 4 9 6 0 2 5.
+[2026-06-29 18:28:01] Patient Bot: Yes, that’s correct. When can I expect the refill request to be sent?
+[2026-06-29 18:28:03] Agent: Is that correct?
+[2026-06-29 18:28:03] Patient Bot: Yes, that’s correct. When can I expect the refill request to be sent?
+[2026-06-29 18:28:18] Agent: Is there anything else you'd like the staff to know about your refill request?
+[2026-06-29 18:28:18] Patient Bot: No, that's all for the refill request. Do I need to do anything else?
+[2026-06-29 18:28:20] Agent: For example, any symptoms or urgency.
+[2026-06-29 18:28:20] Patient Bot: I don't have any urgent symptoms, but I'm out of my inhaler. Is the refill request going to be sent soon?
+[2026-06-29 18:28:37] Agent: Could you please tell me the name of the pharmacy you want to use for your medication?
+[2026-06-29 18:28:37] Patient Bot: I use Walgreens at 2945 South 6th Street, Springfield, Illinois, 62703.
+[2026-06-29 18:28:46] Agent: If you know the address, city, or any details like cross streets or nearby stores, that would help too. If you have their phone or fax number, please share that as well.
+[2026-06-29 18:28:46] Patient Bot: I just have the address: Walgreens at 2945 South 6th Street, Springfield, Illinois, 62703. I don’t have their phone number right now.
+[2026-06-29 18:29:03] Agent: No problem. Please tell me the full address of the pharmacy, including the city and state if you have them. Any extra details like the name or what it's near, would also be helpful.
+[2026-06-29 18:29:03] Patient Bot: The full address is Walgreens, 2945 South 6th Street, Springfield, Illinois, 62703.
+[2026-06-29 18:29:32] Agent: Your refill request for the albuterol sulfate inhaler is being processed.
+[2026-06-29 18:29:32] Patient Bot: Thank you. Do I need to wait for the doctor to approve it, or should I check with my pharmacy?
+[2026-06-29 18:29:35] Agent: And will be reviewed by the clinic staff.
+[2026-06-29 18:29:35] Patient Bot: Okay, so I may need to check with the pharmacy later. How long do you think it will take for the review?
+[2026-06-29 18:29:42] Agent: They will contact you at 8 7 7 3 4 9 6 0 2 5 if they need anything else.
+[2026-06-29 18:29:42] Patient Bot: Got it, I'll wait for their call. Thank you for your help!
+[2026-06-29 18:29:44] Agent: Do not need to do anything further right now.
+[2026-06-29 18:29:44] Patient Bot: Alright, thank you again! Have a great day!
+[2026-06-29 18:29:53] Agent: You're all set.
+[2026-06-29 18:29:53] Patient Bot: Thanks! Goodbye!
+[2026-06-29 18:29:57] Agent: The team will follow-up as soon as possible. Have a great day.
+[2026-06-29 18:29:57] Patient Bot: Thank you! You too!

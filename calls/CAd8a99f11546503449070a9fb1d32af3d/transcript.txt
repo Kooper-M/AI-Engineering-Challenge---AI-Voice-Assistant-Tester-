@@ -1,0 +1,54 @@
+[2026-06-26 20:21:29] Agent: This call may be recorded for quality and training purposes.
+[2026-06-26 20:21:29] Patient Bot: That's fine. I'm calling to reschedule a migraine follow-up appointment. Could you help me with that?
+[2026-06-26 20:21:31] Agent: Thanks for calling Pivot Point Orthopaedics.
+[2026-06-26 20:21:31] Patient Bot: You're welcome. I need to reschedule a migraine follow-up appointment. Can you check if I have one scheduled?
+[2026-06-26 20:21:35] Agent: Part of Pretty Good AI. Am I speaking with Alex?
+[2026-06-26 20:21:35] Patient Bot: Yes, this is Alex. I’d like to reschedule my migraine follow-up appointment. Could you confirm if I have one scheduled?
+[2026-06-26 20:21:48] Agent: Please provide your date of birth.
+[2026-06-26 20:21:48] Patient Bot: Sure, my date of birth is January fifth, two thousand one.
+[2026-06-26 20:22:00] Agent: Alex, you have 2 upcoming appointments.
+[2026-06-26 20:22:00] Patient Bot: Can you let me know the dates and times of those appointments?
+[2026-06-26 20:22:04] Agent: 1 is on Thursday, July 2 at 11AM with doctor Kelly Noble.
+[2026-06-26 20:22:04] Patient Bot: I think I might need to reschedule that. Can you tell me what the second appointment is?
+[2026-06-26 20:22:10] Agent: And the other is on Friday, July 10 at 1PM with doctor Zebignulakovsky.
+[2026-06-26 20:22:10] Patient Bot: I want to reschedule the appointment on July 10. Can you move that to Tuesday afternoon instead?
+[2026-06-26 20:22:15] Agent: Would you like to reschedule 1 of these? And if so, which 1 is for your migraine follow-up?
+[2026-06-26 20:22:15] Patient Bot: The appointment on July 10 at 1 PM is for my migraine follow-up. Can we move that one to Tuesday afternoon?
+[2026-06-26 20:22:32] Agent: Can you tell me the reason you need to re reschedule your mind rain follow-up on Friday, July 10 at 1PM?
+[2026-06-26 20:22:32] Patient Bot: I've had a change in my work schedule, so I need to move that appointment. Could we set it for Tuesday afternoon instead?
+[2026-06-26 20:22:45] Agent: Let me check for available appointments on Tuesday afternoons for your migraine follow-up.
+[2026-06-26 20:22:45] Patient Bot: Thank you. I appreciate it.
+[2026-06-26 20:22:56] Agent: I'm checking for Tuesday afternoon openings for your mind rain follow-up. 1 moment.
+[2026-06-26 20:22:56] Patient Bot: Sure, take your time.
+[2026-06-26 20:23:03] Agent: Here are the next available Tuesday afternoon slots for your migraine follow-up. With doctor Zigbing Yu Lukoski.
+[2026-06-26 20:23:03] Patient Bot: What time are those Tuesday afternoon slots available?
+[2026-06-26 20:23:12] Agent: Tuesday, June 30 at 01:45PM, Tuesday, July 7 at 1PM, and Tuesday, July 14 at 1PM.
+[2026-06-26 20:23:12] Patient Bot: Can we schedule the appointment for Tuesday, July 7 at 1 PM?
+[2026-06-26 20:23:15] Agent: Would you like to move your appointment to 1 of these times?
+[2026-06-26 20:23:15] Patient Bot: Yes, I’d like to move my appointment to Tuesday, July 7 at 1 PM.
+[2026-06-26 20:23:35] Agent: Just to confirm, you want to move your migraine follow-up with doctor Zabigniew Lakoski to Tuesday, July 7 at 1PM in Nashville. Is that correct?
+[2026-06-26 20:23:35] Patient Bot: I think there was a mix-up. My migraine follow-up is with doctor Zebignulakovsky. But yes, I want to confirm the appointment for Tuesday, July 7 at 1 PM in Nashville.
+[2026-06-26 20:23:48] Agent: No problem. Can you tell me what needs to be corrected or which date and time you'd like in instead?
+[2026-06-26 20:23:48] Patient Bot: I’d like to confirm Tuesday, July 7 at 1 PM for my migraine follow-up with doctor Zebignulakovsky in Nashville.
+[2026-06-26 20:24:09] Agent: You'd like to move your mind rain follow-up to Tuesday, July 7 at 1PM with doctor Zigniew Lecosti in Nashville. Is that correct?
+[2026-06-26 20:24:09] Patient Bot: There seems to be a confusion with the doctor's name. I want to confirm the appointment for Tuesday, July 7 at 1 PM with doctor Zebignulakovsky in Nashville.
+[2026-06-26 20:24:24] Agent: Thanks for clarifying.
+[2026-06-26 20:24:24] Patient Bot: You're welcome. Can you confirm that appointment for me?
+[2026-06-26 20:24:31] Agent: New appointment will be Tuesday, July 7 at 1PM in Nashville with doctor Zeebigniew Is that correct?
+[2026-06-26 20:24:31] Patient Bot: Yes, that's correct. Tuesday, July 7 at 1 PM in Nashville with doctor Zebignulakovsky. Thank you!
+[2026-06-26 20:24:50] Agent: Your migraine follow-up with doctor Zegniew Likoski is now rescheduled for Tuesday, July 7 at 1PM.
+[2026-06-26 20:24:50] Patient Bot: Thank you for confirming that. Is there anything else I need to know?
+[2026-06-26 20:24:54] Agent: Would you like me to send you a text message with these details?
+[2026-06-26 20:24:54] Patient Bot: Yes, please send me a text message with those details. Thank you!
+[2026-06-26 20:25:05] Agent: I've sent a text message with your new appointment details.
+[2026-06-26 20:25:05] Patient Bot: Great, thanks for your help! Have a good day!
+[2026-06-26 20:25:07] Agent: If you need anything else, just let me know.
+[2026-06-26 20:25:07] Patient Bot: I will, thank you! Goodbye!
+[2026-06-26 20:25:11] Agent: You'll get a text with your new appointment details soon.
+[2026-06-26 20:25:11] Patient Bot: Thank you! I'll keep an eye out for it. Goodbye!
+[2026-06-26 20:25:14] Agent: If you need anything else, just let me know.
+[2026-06-26 20:25:14] Patient Bot: I appreciate it. Thank you for your help today! Goodbye!
+[2026-06-26 20:25:23] Agent: You're welcome, Alex.
+[2026-06-26 20:25:23] Patient Bot: Thank you! Have a great day!
+[2026-06-26 20:25:26] Agent: Take care, and have a great day. Goodbye.
+[2026-06-26 20:25:26] Patient Bot: Goodbye! Take care!

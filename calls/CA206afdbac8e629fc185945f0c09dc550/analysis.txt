@@ -1,0 +1,55 @@
+SCENARIO PROMPT
+================
+Current scenario: rescheduling an appointment. You are calling because you believe you have a migraine follow-up that needs to be moved because your work schedule changed. You may be misremembering the appointment date. If the office finds an existing appointment, confirm it is yours and try to move that appointment to Tuesday afternoon. If the office says you do not have an appointment to move, stop pursuing the reschedule and ask to schedule a new migraine follow-up for Tuesday afternoon.
+
+
+ANALYSIS
+================
+Call Summary:
+The patient (Alex) called to reschedule a migraine follow-up. After verifying DOB, the agent listed three upcoming appointments. Alex identified the Tuesday, July 7 at 1:00 PM visit as the migraine follow-up and asked to move it to Tuesday afternoon. The agent offered Tuesday, July 7 at 1:45 PM and mentioned a location earlier. There was confusion about whether the provider would remain the same; the agent did not clearly answer when asked. The agent collected a reason (work schedule change) and then confirmed the new appointment for Tuesday, July 7 at 1:45 PM, and sent a text confirmation.
+
+Scenario Outcome:
+Goal completed: Yes
+The original Tuesday appointment was moved to Tuesday afternoon (1:45 PM), and confirmation was provided with a text. Despite some communication gaps, the core rescheduling goal was achieved.
+
+Issues Found:
+Bug: Did not directly answer the patient’s clarification about whether the provider would remain the same
+Severity: Medium
+Source: Agent
+Where: 13:57:40–13:58:47
+Details: When the patient asked the agent to repeat the details and specifically clarify whether the provider would be the same, the agent did not answer directly and instead asked for confirmation to move forward. The patient asked again about keeping the same doctor, and the agent still did not clearly confirm provider continuity before finalizing.
+Expected Behavior: Clearly confirm whether the provider remains the same or explain if it changes, and proceed only after the patient confirms their preference.
+
+Bug: Incomplete appointment details provided (missing time)
+Severity: Low
+Source: Agent
+Where: 13:57:14
+Details: The agent listed an upcoming appointment as “Wednesday, July 8 at AM” without a specific time.
+Expected Behavior: Provide complete appointment details (date and specific time) for clarity.
+
+Bug: Did not repeat details when asked; pushed for confirmation instead
+Severity: Medium
+Source: Agent
+Where: 13:57:40–13:57:42
+Details: After the patient asked the agent to repeat/clarify the offered slot, the agent skipped repeating the details and immediately asked, “Would you like to move your appointment to that time?”
+Expected Behavior: Repeat the exact date/time (and provider/location if relevant) when the caller asks for clarification before seeking confirmation.
+
+Bug: Offered additional alternative times after the patient already selected a slot
+Severity: Low
+Source: Agent
+Where: 13:57:49
+Details: After the patient accepted July 7 at 1:45 PM, the agent introduced new options on June 30, adding minor friction.
+Expected Behavior: Once the patient selects and confirms a slot, proceed with rescheduling rather than introducing new options unless availability changes or the patient asks.
+
+Bug: Redundant closing messages about sending the confirmation text
+Severity: Low
+Source: Agent
+Where: 13:59:01 and 13:59:07
+Details: The agent stated twice that a text message had been sent, which is repetitive.
+Expected Behavior: Confirm the text was sent once, then proceed to closing.
+
+Overall Sentiment:
+Polite and professional overall, but with moments of unresponsiveness to the patient’s clarification requests.
+
+Final Recommendation:
+Consider this call successful, with some quality issues to address (mainly around directly answering clarification questions and providing complete details). No major bugs that prevented task completion.

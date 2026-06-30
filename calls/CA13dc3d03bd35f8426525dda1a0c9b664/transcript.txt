@@ -1,0 +1,46 @@
+[2026-06-29 18:32:30] Agent: This call may be recorded for quality and training purposes.
+[2026-06-29 18:32:30] Patient Bot: That's fine. I'm calling to reschedule my migraine follow-up appointment.
+[2026-06-29 18:32:32] Agent: Thanks for calling Pitot Point Orthopedics.
+[2026-06-29 18:32:32] Patient Bot: I think you might have the wrong clinic. I need to reschedule my migraine follow-up appointment.
+[2026-06-29 18:32:36] Agent: Part of Pretty Good AI. Am I speaking with Alex?
+[2026-06-29 18:32:36] Patient Bot: Yes, that's me. I wanted to reschedule my migraine follow-up appointment.
+[2026-06-29 18:32:47] Agent: Please provide your date of birth.
+[2026-06-29 18:32:47] Patient Bot: My date of birth is January fifth, two thousand one.
+[2026-06-29 18:33:05] Agent: You have 2 upcoming appointments.
+[2026-06-29 18:33:05] Patient Bot: Could you please tell me the dates and times of those appointments?
+[2026-06-29 18:33:15] Agent: 1 is on Thursday, July 2 at 11AM with Kelly Noble, MD, and the other is on Wednesday, July 8 at 9AM with Abeker.
+[2026-06-29 18:33:15] Patient Bot: I believe the July 2 appointment is the one I need to reschedule. Can we move that to Tuesday afternoon?
+[2026-06-29 18:33:17] Agent: Which 1 would you like to reschedule?
+[2026-06-29 18:33:17] Patient Bot: I'd like to reschedule the appointment on July 2 at 11 AM.
+[2026-06-29 18:33:34] Agent: There are no openings on Tuesday afternoons in July.
+[2026-06-29 18:33:34] Patient Bot: What about Monday afternoon or Tuesday morning?
+[2026-06-29 18:33:36] Agent: Would you like to try a different day or time?
+[2026-06-29 18:33:36] Patient Bot: Could you check for Monday afternoon or Wednesday after two?
+[2026-06-29 18:33:50] Agent: There are still no openings on Monday afternoons or Wednesday after 2.
+[2026-06-29 18:33:50] Patient Bot: Can you tell me if there are openings on Friday morning?
+[2026-06-29 18:33:56] Agent: Would you like to try other dates or times, or would you prefer to be connected to someone at the clinic for more help?
+[2026-06-29 18:33:56] Patient Bot: Let's check for openings on Friday morning first. If there’s nothing available, I may need to talk to someone for more help.
+[2026-06-29 18:34:11] Agent: I found openings on Friday morning.
+[2026-06-29 18:34:11] Patient Bot: Great! What time do you have available on Friday morning?
+[2026-06-29 18:34:18] Agent: The next available is Friday, July 17 at 11AM with Kelly Noble, MD in Nashville.
+[2026-06-29 18:34:18] Patient Bot: Let me confirm that. It's July 17 at 11 AM with Kelly Noble, MD, in Nashville. Is that correct?
+[2026-06-29 18:34:25] Agent: There are also slots at 11:30AM that day and at 10AM on Friday, July 24.
+[2026-06-29 18:34:25] Patient Bot: I'd like to go with the July 17 appointment at 11 AM with Kelly Noble, MD.
+[2026-06-29 18:34:27] Agent: Would you like to reschedule to 1 of these times?
+[2026-06-29 18:34:27] Patient Bot: Yes, please confirm the July 17 at 11 AM appointment.
+[2026-06-29 18:34:40] Agent: Before I reschedule, can you tell me the reason you need to move your original appointment?
+[2026-06-29 18:34:40] Patient Bot: I need to move it because my work schedule changed.
+[2026-06-29 18:34:53] Agent: You'd like to move your July 2 appointment at 11AM with Kelly Noble, MD to Friday.
+[2026-06-29 18:34:53] Patient Bot: Yes, that's correct. Please confirm the new appointment for July 17 at 11 AM with Kelly Noble, MD.
+[2026-06-29 18:34:58] Agent: July seventeenth at 11AM in Nashville. Is that correct?
+[2026-06-29 18:34:58] Patient Bot: Yes, that's correct. 
+[2026-06-29 18:35:16] Agent: Your migraine follow-up appointment has been rescheduled for Friday, July 17 at 11AM with Kelly Noble, MD.
+[2026-06-29 18:35:16] Patient Bot: Thank you! Is there anything else I need to do?
+[2026-06-29 18:35:18] Agent: Would you like me to send you a text message with these details?
+[2026-06-29 18:35:18] Patient Bot: That would be great. Thank you!
+[2026-06-29 18:35:31] Agent: I sent the new appointment details to your phone.
+[2026-06-29 18:35:31] Patient Bot: I appreciate it. Thank you for your help!
+[2026-06-29 18:35:34] Agent: Is there anything else I can help you with today?
+[2026-06-29 18:35:34] Patient Bot: No, that’s everything. Thank you!
+[2026-06-29 18:35:43] Agent: You're all set? Have a great day.
+[2026-06-29 18:35:43] Patient Bot: Yes, I'm all set. You too, have a great day!

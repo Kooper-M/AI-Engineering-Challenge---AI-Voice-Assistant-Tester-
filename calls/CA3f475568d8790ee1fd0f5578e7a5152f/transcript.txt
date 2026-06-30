@@ -1,0 +1,70 @@
+[2026-06-26 20:35:43] Agent: This call may be recorded for quality and training purposes. Purposes.
+[2026-06-26 20:35:43] Patient Bot: Okay, that's fine. I would like to cancel my upcoming appointment, please.
+[2026-06-26 20:35:47] Agent: Thanks for calling Pivot Point Orthopaedics. Part of pretty good AI.
+[2026-06-26 20:35:47] Patient Bot: I'm here to cancel my appointment. Can you help me with that?
+[2026-06-26 20:35:49] Agent: Am I speaking with Alex?
+[2026-06-26 20:35:49] Patient Bot: Yes, this is Alex. Could you help me with canceling my appointment?
+[2026-06-26 20:36:00] Agent: Please provide your date of birth.
+[2026-06-26 20:36:00] Patient Bot: Sure, it’s January fifth, two thousand one.
+[2026-06-26 20:36:11] Agent: You have 2 upcoming appointments.
+[2026-06-26 20:36:11] Patient Bot: Could you please confirm the dates and times for those appointments?
+[2026-06-26 20:36:14] Agent: 1 is with doctor Kelly Noble on Thursday, July 2.
+[2026-06-26 20:36:14] Patient Bot: I think that appointment needs to be canceled. Can you confirm that it's mine?
+[2026-06-26 20:36:17] Agent: The other is with doctor Zigniew Lakoski.
+[2026-06-26 20:36:17] Patient Bot: Can you tell me the date and time for that appointment?
+[2026-06-26 20:36:19] Agent: On Tuesday, July 7.
+[2026-06-26 20:36:19] Patient Bot: I’d like to cancel the appointment with doctor Kelly Noble on July 2. Can you help with that?
+[2026-06-26 20:36:21] Agent: Which 1 would you like to can
+[2026-06-26 20:36:21] Patient Bot: I want to cancel the appointment with doctor Kelly Noble on July 2.
+[2026-06-26 20:36:27] Agent: Could you please let me know which appointment you wanna cancel?
+[2026-06-26 20:36:27] Patient Bot: I’d like to cancel the appointment with doctor Kelly Noble on July 2.
+[2026-06-26 20:36:32] Agent: July 2 with doctor Kelly Noble or July 7 with doctor Zedemieux Lukowski?
+[2026-06-26 20:36:32] Patient Bot: I want to cancel the appointment on July 2 with doctor Kelly Noble.
+[2026-06-26 20:36:46] Agent: Can you share the reason for canceling your appointment with doctor Kelly Noble on July 2?
+[2026-06-26 20:36:46] Patient Bot: I'm canceling due to illness.
+[2026-06-26 20:36:58] Agent: Just to confirm, you want to cancel your appointment with doctor Kelly Noble on Thursday, July 2. Is that correct?
+[2026-06-26 20:36:58] Patient Bot: Yes, that’s correct.
+[2026-06-26 20:37:09] Agent: Your appointment with Kelly Noble on July 2 has been canceled.
+[2026-06-26 20:37:09] Patient Bot: Thank you. Can I schedule the earliest available appointment now?
+[2026-06-26 20:37:11] Agent: Is there anything else I can help you with today?
+[2026-06-26 20:37:11] Patient Bot: I’d like to schedule the earliest available appointment. Can you help me with that?
+[2026-06-26 20:37:23] Agent: Of course.
+[2026-06-26 20:37:23] Patient Bot: Great! What do you have available?
+[2026-06-26 20:37:30] Agent: What is the reason for your new appointment? For example, is it for an urgent concern, a routine visit, or something else?
+[2026-06-26 20:37:30] Patient Bot: It's for a routine checkup.
+[2026-06-26 20:37:40] Agent: So you'd like to book a general office visit for a routine checkup? Is that right?
+[2026-06-26 20:37:40] Patient Bot: Yes, that’s right.
+[2026-06-26 20:37:51] Agent: Do you have a provider you prefer to see, or would you like the first available appointment with any provider?
+[2026-06-26 20:37:51] Patient Bot: I prefer to see doctor Zigniew Lakoski if he's available.
+[2026-06-26 20:38:01] Agent: Thanks for letting me know your preference.
+[2026-06-26 20:38:01] Patient Bot: You're welcome! What availability do you have for doctor Lakoski?
+[2026-06-26 20:38:06] Agent: Let me check the earliest available appointment with doctor Zigmanu for a routine checkup.
+[2026-06-26 20:38:06] Patient Bot: Thank you. I appreciate it.
+[2026-06-26 20:38:11] Agent: The earliest avail
+[2026-06-26 20:38:11] Patient Bot: Sorry, could you say that again?
+[2026-06-26 20:38:16] Agent: the soonest appointment with doctor Zigniew Lakoski is Thursday.
+[2026-06-26 20:38:16] Patient Bot: Could you let me know the time for that appointment on Thursday?
+[2026-06-26 20:38:18] Agent: July second at 3PM.
+[2026-06-26 20:38:18] Patient Bot: I think that date is already canceled. Do you have another time available?
+[2026-06-26 20:38:20] Agent: Would you like to book that slot?
+[2026-06-26 20:38:20] Patient Bot: No, since that date is canceled, could you please check for another day?
+[2026-06-26 20:38:37] Agent: Would you like to look for the next available appointment after July 2 with doctor Zidmini Lykovsky? Or do you want the soonest slot with any provider?
+[2026-06-26 20:38:37] Patient Bot: I'd like the next available appointment with doctor Zigniew Lakoski after July 2, please.
+[2026-06-26 20:38:54] Agent: Let me check for the next available appointment with doctor Zig Bigniew Lukoski after July 2.
+[2026-06-26 20:38:54] Patient Bot: Thank you for checking.
+[2026-06-26 20:39:01] Agent: 1 moment. The next available appointment with doctor Zignew is Monday, July 6.
+[2026-06-26 20:39:01] Patient Bot: Could you let me know the time for that appointment?
+[2026-06-26 20:39:07] Agent: I have times at 10AM, 10:30AM, and 2PM. Any of these work for you?
+[2026-06-26 20:39:07] Patient Bot: I'd like to schedule the 10AM appointment, please.
+[2026-06-26 20:39:21] Agent: Your new appointment is set for Monday, July 6 at 10AM.
+[2026-06-26 20:39:21] Patient Bot: Thank you for scheduling that! Is there anything else I need to know?
+[2026-06-26 20:39:25] Agent: With doctor Zigniew Lukowski, at Pivot Point Orthopedics.
+[2026-06-26 20:39:25] Patient Bot: That’s perfect. Thank you for your help today!
+[2026-06-26 20:39:32] Agent: Please bring your photo ID, insurance card, a list of your current medications, and any imaging you have.
+[2026-06-26 20:39:32] Patient Bot: Got it. I’ll bring those items with me. Thanks again!
+[2026-06-26 20:39:36] Agent: Need help with anything else?
+[2026-06-26 20:39:36] Patient Bot: No, that’s all for now. Thank you!
+[2026-06-26 20:39:44] Agent: You're all set, Alex.
+[2026-06-26 20:39:44] Patient Bot: Thanks! Have a great day!
+[2026-06-26 20:39:48] Agent: If you need anything else, just give us a call. Have a great day.
+[2026-06-26 20:39:48] Patient Bot: I appreciate it! Bye!

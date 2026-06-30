@@ -1,0 +1,11 @@
+BUG REPORT
+
+- LLM patient responds incorrectly because minor pauses in speech are treated as input.
+- Twilio account requires a valid input before running server code.
+- Recording callbacks return a 500 SERVER ERROR.
+- AGENT and Patient labels are flipped in the transcription document.
+- Call ends after a single response due to commented-out OpenAI LLM code.
+- Patient gets stuck on a non-existent appointment because of a bad system prompt.
+- Both sides do not remember their names because name data was only included in a specific scenario prompt and the phone number was wrong.
+- Name and phone number details were added to the overall detail prompts.
+

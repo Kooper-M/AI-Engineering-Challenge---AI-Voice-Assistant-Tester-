@@ -1,0 +1,48 @@
+[2026-06-28 12:57:15] Agent: This call may be recorded for quality and training purposes.
+[2026-06-28 12:57:15] Patient Bot: Okay, that's fine. I'm calling to ask if your office is open after 5 PM and if you have evening appointments available.
+[2026-06-28 12:57:17] Agent: Thanks for calling Pivot Point Orthopaedics.
+[2026-06-28 12:57:17] Patient Bot: You're welcome. Can you tell me if you're open after 5 PM?
+[2026-06-28 12:57:19] Agent: Part of Pretty Good AI.
+[2026-06-28 12:57:19] Patient Bot: I'm just looking for information about your office hours. Are you open after 5 PM?
+[2026-06-28 12:57:22] Agent: Am I speaking with Alex?
+[2026-06-28 12:57:22] Patient Bot: Yes, this is Alex. Can you let me know if your office has evening appointments available?
+[2026-06-28 12:57:35] Agent: We do offer evening appointments.
+[2026-06-28 12:57:35] Patient Bot: That's great to hear. Can you tell me what evenings are available?
+[2026-06-28 12:57:38] Agent: The clinic is open until 7PM on Wednesdays.
+[2026-06-28 12:57:38] Patient Bot: Okay, what about Friday mornings? Are those available as well?
+[2026-06-28 12:57:44] Agent: On other days, we close earlier at 4PM on Monday, Tuesday, and Thursday, and at noon on Friday.
+[2026-06-28 12:57:44] Patient Bot: I see. So, is there a morning appointment available this Friday or a later appointment next Wednesday?
+[2026-06-28 12:57:46] Agent: You like to schedule an evening appointment?
+[2026-06-28 12:57:46] Patient Bot: Actually, I'm looking for a morning appointment this Friday or a Wednesday appointment after two. Could you help with that?
+[2026-06-28 12:58:03] Agent: Please provide your date of birth.
+[2026-06-28 12:58:03] Patient Bot: My date of birth is January fifth, two thousand one. Can you check for that appointment?
+[2026-06-28 12:58:17] Agent: Thanks, Alex. What type of visit do you need?
+[2026-06-28 12:58:17] Patient Bot: I'm looking to address some knee pain and clicking. Just a regular appointment should be fine. Have you found anything for Friday morning or Wednesday after two?
+[2026-06-28 12:58:19] Agent: Are you coming in for a routine office visit?
+[2026-06-28 12:58:19] Patient Bot: Yes, I am. Do you have a morning appointment available this Friday or an afternoon slot on Wednesday?
+[2026-06-28 12:58:22] Agent: A follow-up, or something else?
+[2026-06-28 12:58:22] Patient Bot: It's actually a new visit for knee pain. Can you check for any available appointments this Friday morning or Wednesday afternoon?
+[2026-06-28 12:58:49] Agent: There are no available appointments this Friday morning or next Wednesday afternoon.
+[2026-06-28 12:58:49] Patient Bot: Alright, can you tell me what the next available slot is?
+[2026-06-28 12:58:52] Agent: Would you like to try a different day, or are you open to seeing any available provider?
+[2026-06-28 12:58:52] Patient Bot: I prefer to stick with morning appointments if possible. What days do you have available for a morning visit?
+[2026-06-28 12:59:08] Agent: I checked for morning appointments, but nothing is available in the next week.
+[2026-06-28 12:59:08] Patient Bot: Okay, how about Monday afternoon or Tuesday morning?
+[2026-06-28 12:59:14] Agent: Would you like me to look further out, or would you prefer to speak with someone from our office for more options?
+[2026-06-28 12:59:14] Patient Bot: Let’s look further out for an afternoon appointment on Monday or a morning one on Tuesday, please.
+[2026-06-28 12:59:30] Agent: The soonest morning a appointments I found are on Wednesday, July 8 with Abeker.
+[2026-06-28 12:59:30] Patient Bot: Sorry, did you say July eighth? That’s quite a while away. Are there any other morning options sooner than that?
+[2026-06-28 12:59:36] Agent: Times available are 9AM, 09:45AM, and 10:30AM.
+[2026-06-28 12:59:36] Patient Bot: Are those times available for the next Wednesday? 
+[2026-06-28 12:59:40] Agent: Would you like to book 1 of these, or should I check Monday afternoon or Tuesday morning next?
+[2026-06-28 12:59:40] Patient Bot: I’ll go with one of those Wednesday morning appointments. Can you book me for 9 AM, please?
+[2026-06-28 12:59:59] Agent: You have a morning appointment booked for Wednesday, July 8 at 9AM with doctor Bricker at Pivot Point Orthopedics.
+[2026-06-28 12:59:59] Patient Bot: Just to confirm, that's July eighth at 9 AM with Dr. Bricker, right?
+[2026-06-28 13:00:06] Agent: Please bring your photo ID, insurance card, a list of your current medications, and any imaging discs you have.
+[2026-06-28 13:00:06] Patient Bot: Alright, I’ll make sure to bring those with me. Thank you for your help!
+[2026-06-28 13:00:11] Agent: Would you like to look for a Friday morning slot as well, or does this Wednesday appointment work for you?
+[2026-06-28 13:00:11] Patient Bot: The Wednesday appointment works for me. Thank you for your assistance!
+[2026-06-28 13:00:23] Agent: You're all set for Wednesday, July 8 at 9AM with doctor Bricker.
+[2026-06-28 13:00:23] Patient Bot: Great! Thank you so much for your help. Have a good day!
+[2026-06-28 13:00:26] Agent: If you need anything else, just let us know. Have a great day.
+[2026-06-28 13:00:26] Patient Bot: I will. Thanks again! Goodbye!

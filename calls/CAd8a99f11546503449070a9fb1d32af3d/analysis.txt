@@ -1,0 +1,34 @@
+SCENARIO PROMPT
+================
+rescheduling an appointment. You are calling because you believe you have a migraine follow-up that needs to be moved because your work schedule changed. You may be misremembering the appointment date. If the office finds an existing appointment, confirm it is yours and try to move that appointment to Tuesday afternoon. If the office says you do not have an appointment to move, stop pursuing the reschedule and ask to schedule a new migraine follow-up for Tuesday afternoon.
+
+
+ANALYSIS
+================
+Call Summary:
+Alex called to reschedule a migraine follow-up. After verifying DOB, the agent found two upcoming appointments: Thu Jul 2 at 11 AM (Dr. Kelly Noble) and Fri Jul 10 at 1 PM (migraine follow-up). Alex chose to move the Jul 10 appointment to a Tuesday afternoon. The agent offered Tue slots (Jun 30 1:45 PM, Jul 7 1 PM, Jul 14 1 PM). Alex selected Tue Jul 7 at 1 PM in Nashville. The agent confirmed the reschedule and sent a text with the new details.
+
+Scenario Outcome:
+Goal completed: Yes
+The agent successfully moved the migraine follow-up from Fri Jul 10 at 1 PM to Tue Jul 7 at 1 PM, confirmed the date/time/location, and sent a confirmation text.
+
+Issues Found:
+Bug: Redundant confirmation loops after selection
+Severity: Medium
+Source: Agent
+Where: 20:23:15 (“Would you like to move your appointment to 1 of these times?” after the patient already selected Jul 7 at 1 PM) and 20:23:48 (“what needs to be corrected or which date and time you'd like instead?” after the patient had already reconfirmed)
+Details: The agent asked the patient to reconfirm intent and provide date/time again despite the patient already choosing and confirming a specific slot. This added unnecessary turns and friction.
+Expected Behavior: Once the patient selects a slot, proceed to reschedule and provide a single, clear final confirmation without re-asking for the same information unless a genuine conflict arises.
+
+Bug: Repetitive closing after mutual goodbyes
+Severity: Low
+Source: Agent
+Where: 20:25:07–20:25:26
+Details: After both parties said goodbye, the agent continued to add closing remarks and repeated information about the text, creating an awkward, extended ending.
+Expected Behavior: Conclude the call after a single clear closing once both parties have said goodbye.
+
+Overall Sentiment:
+Polite and cooperative throughout, with minor confusion due to redundant confirmations; overall positive tone.
+
+Final Recommendation:
+This call should be considered successful. The goal was completed correctly, though there were minor process/turn-taking issues.
