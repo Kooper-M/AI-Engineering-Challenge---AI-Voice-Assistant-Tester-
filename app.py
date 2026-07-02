@@ -193,6 +193,21 @@ sessions = {}
 # Create FastAPI app
 app = FastAPI()
 
+class PromptBufferState:
+    def __init__(self):
+        self.revision = 0
+
+    def mark_interrupted(self):
+        self.revision += 1
+
+def drain_prompt_queue(prompt_queue: asyncio.Queue):
+    latest_text = None
+    while True:
+        try:
+            latest_text = prompt_queue.get_nowait()
+        except asyncio.QueueEmpty:
+            return latest_text
+
 async def ai_response(messages):
     """Get a response from OpenAI API"""
     completion = await asyncio.to_thread(
@@ -202,15 +217,24 @@ async def ai_response(messages):
     )
     return completion.choices[0].message.content
 
-async def process_agent_prompt(websocket: WebSocket, agent_text: str):
+async def process_agent_prompt(
+    websocket: WebSocket,
+    agent_text: str,
+    prompt_state: PromptBufferState,
+    prompt_revision: int,
+):
     call_sid = websocket.call_sid
 
     print(f"Processing prompt: {agent_text}")
-    #agent response
     conversation = sessions[call_sid]
+    next_conversation = conversation + [{"role": "user", "content": agent_text}]
+
+    response = await ai_response(next_conversation)
+    if prompt_revision != prompt_state.revision:
+        print("Discarding stale response after interruption.")
+        return
+
     conversation.append({"role": "user", "content": agent_text})
-    #patient response
-    response = await ai_response(conversation)
     conversation.append({"role": "assistant", "content": response})
 
     # Transcript labels can use real-world names
@@ -227,9 +251,14 @@ async def process_agent_prompt(websocket: WebSocket, agent_text: str):
 
     print(f"Sent response: {response}")
 
-async def prompt_buffer_worker(websocket: WebSocket, prompt_queue: asyncio.Queue):
+async def prompt_buffer_worker(
+    websocket: WebSocket,
+    prompt_queue: asyncio.Queue,
+    prompt_state: PromptBufferState,
+):
     while True:
         agent_texts = [await prompt_queue.get()]
+        prompt_revision = prompt_state.revision
 
         while True:
             try:
@@ -237,13 +266,29 @@ async def prompt_buffer_worker(websocket: WebSocket, prompt_queue: asyncio.Queue
                     prompt_queue.get(),
                     timeout=PROMPT_PADDING_SECONDS,
                 )
+                if prompt_revision != prompt_state.revision:
+                    prompt_revision = prompt_state.revision
+                    agent_texts = [next_text]
+                    continue
+
                 agent_texts.append(next_text)
             except asyncio.TimeoutError:
                 break
 
+        if prompt_revision != prompt_state.revision:
+            latest_agent_text = drain_prompt_queue(prompt_queue)
+            if latest_agent_text:
+                await prompt_queue.put(latest_agent_text)
+            continue
+
         combined_agent_text = " ".join(text.strip() for text in agent_texts if text.strip())
         if combined_agent_text:
-            await process_agent_prompt(websocket, combined_agent_text)
+            await process_agent_prompt(
+                websocket,
+                combined_agent_text,
+                prompt_state,
+                prompt_revision,
+            )
 
 @app.post("/twiml")
 async def twiml_endpoint():
@@ -263,7 +308,8 @@ async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
     call_sid = None
     prompt_queue = asyncio.Queue()
-    buffer_task = asyncio.create_task(prompt_buffer_worker(websocket, prompt_queue))
+    prompt_state = PromptBufferState()
+    buffer_task = asyncio.create_task(prompt_buffer_worker(websocket, prompt_queue, prompt_state))
     
     try:
         while True:
@@ -284,6 +330,8 @@ async def websocket_endpoint(websocket: WebSocket):
                 
             elif message["type"] == "interrupt":
                 print("Handling interruption.")
+                prompt_state.mark_interrupted()
+                drain_prompt_queue(prompt_queue)
                 
             else:
                 print(f"Unknown message type received: {message['type']}")

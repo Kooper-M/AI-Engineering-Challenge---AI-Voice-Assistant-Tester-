@@ -8,4 +8,5 @@ BUG REPORT
 - Patient gets stuck on a non-existent appointment because of a bad system prompt.
 - Both sides do not remember their names because name data was only included in a specific scenario prompt and the phone number was wrong.
 - Name and phone number details were added to the overall detail prompts.
-
+- Both patient and agent get stuck in a converstation loop continually thanking eachother with no end to call. 
+- The interruption handler doesn't do anything yet
